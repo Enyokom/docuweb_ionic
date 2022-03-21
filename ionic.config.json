@@ -1,0 +1,7 @@
+{
+  "name": "docuweb",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
