@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "docuweb",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

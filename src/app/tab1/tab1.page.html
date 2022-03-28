@@ -1,7 +1,10 @@
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Home
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +12,45 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="large">Home</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <div class="w3-container" >
+    <h1 class="w3-center" style="color: rgb(238, 20, 20);"><b>Docu Web</b></h1>
+    <div class="logo">
+      <!--<ion-icon color="light" name="sunny"></ion-icon>-->
+      <!-- <ion-icon color="light" name="contact"></ion-icon> -->
+      <!-- <ion-icon color="light" name="cloudy-night"></ion-icon> -->
+      <ion-img src="../../assets/icon/logo_airsupportn.png"></ion-img>
+    </div>
+    <h1 class="w3-center" style="color: black;"><b>Aircraft Maintenance Company</b></h1>
+
+  </div>
+  <div class="w3-container" style="padding:50px 16px; color: darkblue;" id="about">
+    <h3 class="w3-center">Rejoignez notre equipe</h3>
+    <div class="w3-row-padding w3-center" style="margin-top:64px">
+      <div class="w3-quarter">
+        <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+        <p class="w3-large">Responsive</p>
+        <p>Docu Web dévéloppe ses applications en RWD (Responsive Web Design: ordinateur, téléphone, tablette, etc...)</p>
+      </div>
+      <div class="w3-quarter">
+        <i class="fa fa-cloud w3-margin-bottom w3-jumbo"></i>
+        <p class="w3-large">Offres d'emploi</p>
+        <p>DNT (Dévéloppeur des Nouvelles Technlogies)</p>
+      </div>
+      <div class="w3-quarter">
+        <i class="fa fa-building w3-margin-bottom w3-jumbo"></i>
+        <p class="w3-large">Disponibilité</p>
+        <p>Deux nouveaux hangars de maintenance aéroportuaire disponibles avec notre partenaire Aeroport de Biarritz-Anglet</p>
+      </div>
+      <div class="w3-quarter">
+        <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+        <p class="w3-large">Support</p>
+        <p>Un support est disponible par téléphone ou courriel afin de vous aider dans toutes vos démarches.</p>
+      </div>
+    </div>
+  </div>
+
 </ion-content>

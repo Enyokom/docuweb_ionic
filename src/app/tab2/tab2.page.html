@@ -1,17 +1,27 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
     <ion-title>
-      Tab 2
-    </ion-title>
+      Etapes</ion-title>
   </ion-toolbar>
 </ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
+<ion-content>
+  <ion-header>
+    <ion-toolbar color="primary" style="text-align: center;">
+      <label style="text-align: center; color: white; align-content: center;">Recherche un étape</label>
+    </ion-toolbar>
+    <ion-toolbar style="text-align: center;" color="primary">
+      <ion-searchbar [(ngModel)]="searchTitle" inputmode="numeric" placeholder="etapes"></ion-searchbar>
+      <ion-buttons slot="end">
+        <ion-button color="light" (click)="getEtapes()">
+          <ion-icon name="search-sharp"></ion-icon>
+        </ion-button>
+      </ion-buttons>
     </ion-toolbar>
   </ion-header>
-
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <h1 style="text-align: center; color: darkblue; align-content: center;">{{ EtapesData.Nom }}</h1>
+  <p style="text-align: center; color: darkblue; align-content: center;"><label style="text-align: center; color: darkblue; align-content: center; text-decoration: underline;">Nom : </label><br/>{{ EtapesData.Nom }}</p>
+  <p style="text-align: center; color: darkblue; align-content: center;"><label style="text-align: center; color: darkblue; align-content: center; text-decoration: underline;">Description: </label><br/>{{ EtapesData.Description }}</p>
+  <p style="text-align: center; color: darkblue; align-content: center;"><label style="text-align: center; color: darkblue; align-content: center; text-decoration: underline;">Statut : </label><br/>{{ EtapesData.Statut}}</p>
+</ion-content>
 </ion-content>
